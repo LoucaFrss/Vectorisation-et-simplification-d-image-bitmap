@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "image.h"
+#include <sys/types.h>
 
 /* macro donnant l'indice du pixel de coordonnees (_x,_y) de l'image _I
    dans le tableau de pixels de l'image _I */

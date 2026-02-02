@@ -37,7 +37,7 @@ INCLUDEOPTS = -I$(INCDIR)
 COMPILOPTS = -g -Wall $(INCLUDEOPTS)
 
 # liste des executables
-EXECUTABLES = test_contour
+EXECUTABLES = test_eps
 
 
 #############################################################################
@@ -87,20 +87,27 @@ contour.o : contour.c contour.h
 sequence_point.o : sequence_point.c sequence_point.h 
 	@echo ""
 	@echo "---------------------------------------------"
-	@echo "Compilation du module geom2d"
+	@echo "Compilation du module sequence_point"
 	@echo "---------------------------------------------"
 	$(CC) -c $(COMPILOPTS) $<
-		
-test_contour.o : test_contour.c image.h sequence_point.h  geom2d.h contour.h
+
+eps.o : eps.c eps.h sequence_point.h  
 	@echo ""
 	@echo "---------------------------------------------"
-	@echo "Compilation du module test_contour"
+	@echo "Compilation du module eps"
+	@echo "---------------------------------------------"
+	$(CC) -c $(COMPILOPTS) $<
+
+test_eps.o : test_eps.c image.h sequence_point.h  geom2d.h contour.h eps.h
+	@echo ""
+	@echo "---------------------------------------------"
+	@echo "Compilation du module test_eps"
 	@echo "---------------------------------------------"
 	$(CC) -c $(COMPILOPTS) $<
 ########################################################
 # regles explicites de creation des executables
 
-test_contour : test_contour.o image.o sequence_point.o geom2d.o contour.o
+test_eps : test_eps.o image.o sequence_point.o geom2d.o contour.o eps.o
 	@echo ""
 	@echo "---------------------------------------------"
 	@echo "Creation de l'executable "$@

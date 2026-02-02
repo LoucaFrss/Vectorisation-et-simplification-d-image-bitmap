@@ -1,0 +1,21 @@
+<h1 id="map401---compte-rendu-tâche-2-partie-1">MAP401 - Compte-rendu
+Tâche 2 Partie 1</h1>
+<h2 id="images-de-test">Images de test</h2>
+<figure>
+<img src="./caractere2.png" alt="caractere2.pbm" />
+<figcaption aria-hidden="true">caractere2.pbm</figcaption>
+</figure>
+<pre><code>Contour avec 41 points
+[ (  2.0,  1.0) (  3.0,  1.0) (  4.0,  1.0) (  5.0,  1.0) (  5.0,  2.0) (  6.0,  2.0) (  6.0,  3.0) (  6.0,  4.0) (  5.0,  4.0) (  5.0,  5.0) (  4.0,  5.0) (  4.0,  6.0) (  3.0,  6.0) (  3.0,  7.0) (  4.0,  7.0) (  5.0,  7.0) (  6.0,  7.0) (  6.0,  8.0) (  5.0,  8.0) (  4.0,  8.0) (  3.0,  8.0) (  2.0,  8.0) (  1.0,  8.0) (  1.0,  7.0) (  2.0,  7.0) (  2.0,  6.0) (  3.0,  6.0) (  3.0,  5.0) (  4.0,  5.0) (  4.0,  4.0) (  5.0,  4.0) (  5.0,  3.0) (  5.0,  2.0) (  4.0,  2.0) (  3.0,  2.0) (  2.0,  2.0) (  2.0,  3.0) (  1.0,  3.0) (  1.0,  2.0) (  2.0,  2.0) (  2.0,  1.0)]</code></pre>
+<figure>
+<img src="./carre.png" alt="carre.pbm" />
+<figcaption aria-hidden="true">carre.pbm</figcaption>
+</figure>
+<pre><code>Contour avec 21 points
+[ (  1.0,  1.0) (  2.0,  1.0) (  3.0,  1.0) (  4.0,  1.0) (  5.0,  1.0) (  6.0,  1.0) (  6.0,  2.0) (  6.0,  3.0) (  6.0,  4.0) (  6.0,  5.0) (  6.0,  6.0) (  5.0,  6.0) (  4.0,  6.0) (  3.0,  6.0) (  2.0,  6.0) (  1.0,  6.0) (  1.0,  5.0) (  1.0,  4.0) (  1.0,  3.0) (  1.0,  2.0) (  1.0,  1.0)]</code></pre>
+<figure>
+<img src="./petit%20carre.png" alt="petit carre.pbm" />
+<figcaption aria-hidden="true">petit carre.pbm</figcaption>
+</figure>
+<pre><code>Contour avec 5 points
+[ (  3.0,  5.0) (  4.0,  5.0) (  4.0,  6.0) (  3.0,  6.0) (  3.0,  5.0)]</code></pre>

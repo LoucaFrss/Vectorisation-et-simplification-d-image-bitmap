@@ -1,0 +1,35 @@
+chat.pbm
+nb de segments: 880
+dimensions: (250px, 140px)
+
+coq.pbm
+nb de segments: 5386
+dimensions: (700px, 720px)
+
+elephant.pbm
+nb de segments: 5344
+dimensions: (800px, 700px)
+
+gymnaste.pbm
+nb de segments: 8784
+dimensions: (1056px, 1647px)
+
+image_ex_poly.pbm
+nb de segments: 18
+dimensions: (4px, 4px)
+
+labyrinthe.pbm
+nb de segments: 44000
+dimensions: (221px, 201px)
+
+lettreZ.pbm
+nb de segments: 9396
+dimensions: (600px, 1029px)
+
+map401.pbm
+nb de segments: 8072
+dimensions: (830px, 300px)
+
+tete.pbm
+nb de segments: 8136
+dimensions: (1252px, 1252px)

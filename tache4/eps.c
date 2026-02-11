@@ -1,7 +1,7 @@
 #include "eps.h"
 #include "image.h"
 #include <stdio.h>
-int ecrire_eps(Liste_Point l, Vecteur dimensions, char *fichier)
+int ecrire_eps(Liste_Point l, Vecteur dimensions, char *fichier, int stroke)
 {
 
     FILE *f = fopen(fichier, "w");
@@ -19,8 +19,15 @@ int ecrire_eps(Liste_Point l, Vecteur dimensions, char *fichier)
         p = t.tab[i];
         fprintf(f, "%d %d lineto ", (int)p.x, (int)dimensions.y - (int)p.y);
     }
+    if (!stroke)
+    {
+        fprintf(f, "\n0 setlinewidth fill\n\n");
+    }
+    else
+    {
 
-    fprintf(f, "\n0 setlinewidth fill\n\n");
+        fprintf(f, "\n0 setlinewidth stroke\n\n");
+    }
     fprintf(f, "\nshowpage\n");
 
     fclose(f);

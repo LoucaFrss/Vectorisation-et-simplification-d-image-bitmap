@@ -25,7 +25,6 @@ Vecteur mul_vect(Vecteur V, double a);
 
 double produit_scalaire(Vecteur A, Vecteur B);
 float norme(Vecteur V);
-
 typedef struct
 {
     Point a;
@@ -34,3 +33,4 @@ typedef struct
 } Segment;
 
 #endif
+float distance_point_segment(Segment s, Point p);

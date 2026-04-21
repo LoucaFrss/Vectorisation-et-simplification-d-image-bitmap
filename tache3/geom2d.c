@@ -11,6 +11,10 @@ Point add_point(Point P1, Point P2)
 {
     return set_point(P1.x + P2.x, P1.y + P2.y);
 }
+Point sub_point(Point P1, Point P2)
+{
+    return set_point(P1.x - P2.x, P1.y - P2.y);
+}
 
 Point mul_point(Point P, double a)
 {

@@ -46,6 +46,28 @@ float norme(Vecteur V)
     return sqrtf(V.x * V.x + V.y * V.y);
 }
 
-float distance_segment_point(Segment s, Point p)
+float distance_point_segment(Segment s, Point p)
 {
+    if ((s.a.x == s.b.x) && (s.a.y == s.b.y))
+        return distance(s.a, p);
+
+    float d;
+    Vecteur vecteur_segment = vect_bipoint(s.a, s.b);
+    Vecteur vecteur_de_p = vect_bipoint(s.a, p);
+    double lamda = produit_scalaire(vecteur_de_p, vecteur_segment) / (produit_scalaire(vecteur_segment, vecteur_segment));
+    if (lamda < 0)
+    {
+        d = distance(s.a, p);
+    }
+    else if (lamda >= 0 && lamda <= 1)
+    {
+        Point Q;
+        Q = add_point(add_point(s.a, mul_point(s.b, lamda)), mul_point(s.a, -lamda));
+        d = distance(p, Q);
+    }
+    else
+    {
+        d = distance(p, s.b);
+    }
+    return d;
 }

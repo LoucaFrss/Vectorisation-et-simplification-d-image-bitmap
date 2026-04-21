@@ -8,6 +8,8 @@ int ecrire_eps(Liste_Point l, Vecteur dimensions, char *fichier, int stroke)
     if (!f)
         return -1; // Sécurité
 
+    printf("nombre points: %d\n", l.taille);
+
     Tableau_Point t = sequence_points_liste_vers_tableau(l);
 
     fprintf(f, "%%!PS-Adobe-3.0 EPSF-3.0\n");

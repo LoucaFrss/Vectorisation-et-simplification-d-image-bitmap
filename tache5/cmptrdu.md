@@ -1,11 +1,15 @@
 # MAP401 - TACHE 5
 Contours de image1_poly avec 20 points
+nombre de segments: 18
+
 ```
 [ (  1.0,  0.0) (  2.0,  0.0) (  3.0,  0.0) (  3.0,  1.0) (  4.0,  1.0) (  4.0,  2.0) (  3.0,  2.0) (  2.0,  2.0) (  2.0,  3.0) (  1.0,  3.0) (  0.0,  3.0) (  0.0,  2.0) (  0.0,  1.0) (  1.0,  1.0) (  1.0,  0.0) ]
 
 [(  1.0,  2.0) (  2.0,  2.0) (  2.0,  1.0) (  1.0,  1.0) (  1.0,  2.0)]
 ```
 Contours de image2_poly avec 59 points
+nombre de segments: 56
+
 
 ```
 [ (  2.0,  0.0) (  3.0,  0.0) (  4.0,  0.0) (  5.0,  0.0) (  6.0,  0.0) (  6.0,  1.0) (  6.0,  2.0) (  7.0,  2.0) (  7.0,  3.0) (  6.0,  3.0) (  6.0,  4.0) (  5.0,  4.0) (  5.0,  5.0) (  4.0,  5.0) (  3.0,  5.0) (  2.0,  5.0) (  2.0,  4.0) (  1.0,  4.0) (  1.0,  3.0) (  1.0,  2.0) (  1.0,  1.0) (  2.0,  1.0) (  2.0,  0.0)]
@@ -15,42 +19,45 @@ Contours de image2_poly avec 59 points
 [ (  0.0,  5.0) (  1.0,  5.0) (  1.0,  6.0) (  2.0,  6.0) (  3.0,  6.0) (  3.0,  7.0) (  3.0,  8.0) (  4.0,  8.0) (  4.0,  7.0) (  5.0,  7.0) (  6.0,  7.0) (  7.0,  7.0) (  7.0,  8.0) (  7.0,  9.0) (  6.0,  9.0) (  5.0,  9.0) (  4.0,  9.0) (  3.0,  9.0) (  2.0,  9.0) (  1.0,  9.0) (  1.0,  8.0) (  0.0,  8.0) (  0.0,  7.0) (  0.0,  6.0) (  0.0,  5.0)]
 ```
 ./animaux.pbm:
-nombredepoints:34492
-nombredesegments:96
+nombredesegments:34396
+nombredecontours:96
 
 ./Bugs_Bunny.pbm:
-nombredepoints:13235
-nombredesegments:63
+nombredesegments:13172
+nombredecontours:63
 
 ./Charlot.pbm:
-nombredepoints:9074
-nombredesegments:34
+nombredesegments:9074
+nombredecontours:34
 
 ./damier_4_5_1.pbm:
-nombredepoints:44
-nombredesegments:4
+nombredesegments:40
+nombredecontours:4
 
 ./dessin-delius.pbm:
-nombredepoints:111743
-nombredesegments:815
+nombredesegments:110928
+nombredecontours:815
 
 ./deux-des.pbm:
-nombredepoints:11162
-nombredesegments:38
+nombredesegments:11124
+nombredecontours:38
 
 ./Droopy_Wolf.pbm:
-nombredepoints:17384
-nombredesegments:78
+nombredesegments:17306
+nombredecontours:78
 
 ./FranceRegions.pbm:
-nombredepoints:29580
-nombredesegments:40
+nombredesegments:29540
+nombredecontours:40
 
+./papillon2.pbm:
+nombredesegments:18212
+nombredecontours:140
 
 
 ./space_invader.pbm:
-nombre de points: 77
-nombre de segments: 3
+nombre de segments: 74
+nombre de contours: 3
 ```
 [ (  2.0,  0.0) (  3.0,  0.0) (  3.0,  1.0) (  4.0,  1.0) (  4.0,  2.0) (  5.0,  2.0) (  6.0,  2.0) (  7.0,  2.0) (  7.0,  1.0) (  8.0,  1.0) (  8.0,  0.0) (  9.0,  0.0) (  9.0,  1.0) (  8.0,  1.0) (  8.0,  2.0) (  9.0,  2.0) (  9.0,  3.0) ( 10.0,  3.0) ( 10.0,  4.0) ( 11.0,  4.0) ( 11.0,  5.0) ( 11.0,  6.0) ( 11.0,  7.0) ( 10.0,  7.0) ( 10.0,  6.0) ( 10.0,  5.0) (  9.0,  5.0) (  9.0,  6.0) (  9.0,  7.0) (  8.0,  7.0) (  8.0,  8.0) (  7.0,  8.0) (  6.0,  8.0) (  6.0,  7.0) (  7.0,  7.0) (  8.0,  7.0) (  8.0,  6.0) (  7.0,  6.0) (  6.0,  6.0) (  5.0,  6.0) (  4.0,  6.0) (  3.0,  6.0) (  3.0,  7.0) (  4.0,  7.0) (  5.0,  7.0) (  5.0,  8.0) (  4.0,  8.0) (  3.0,  8.0) (  3.0,  7.0) (  2.0,  7.0) (  2.0,  6.0) (  2.0,  5.0) (  1.0,  5.0) (  1.0,  6.0) (  1.0,  7.0) (  0.0,  7.0) (  0.0,  6.0) (  0.0,  5.0) (  0.0,  4.0) (  1.0,  4.0) (  1.0,  3.0) (  2.0,  3.0) (  2.0,  2.0) (  3.0,  2.0) (  3.0,  1.0) (  2.0,  1.0) (  2.0,  0.0) (  3.0,  4.0) (  4.0,  4.0) (  4.0,  3.0) (  3.0,  3.0) (  3.0,  4.0) (  7.0,  4.0) (  8.0,  4.0) (  8.0,  3.0) (  7.0,  3.0) (  7.0,  4.0)]
 

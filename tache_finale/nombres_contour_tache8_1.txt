@@ -1,0 +1,74 @@
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/Asterix3.pbm  3 ; mv test.eps Asterix3_3.eps
+Nombre de contours: 32
+d: 3.000000
+Nombre de courbes de Bezier de degrés 2: 296
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ gv ./Asterix3_3.eps 
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/Asterix3.pbm  1 ; mv test.eps Asterix3_1.eps
+Nombre de contours: 32
+d: 1.000000
+Nombre de courbes de Bezier de degrés 2: 966
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ gv ./Asterix3_1.eps 
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/Asterix3.pbm  10 ; mv test.eps Asterix3_10.eps
+Nombre de contours: 32
+d: 10.000000
+Nombre de courbes de Bezier de degrés 2: 158
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ gv ./Asterix3_10.eps 
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/Asterix3.pbm  30 ; mv test.eps Asterix3_30.eps
+Nombre de contours: 32
+d: 30.000000
+Nombre de courbes de Bezier de degrés 2: 69
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ gv ./Asterix3_30.eps 
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ 
+
+
+
+
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/lettre-L-cursive.pbm  1; mv test.eps ./lettre-L-cursive_1.eps
+Nombre de contours: 3
+d: 1.000000
+Nombre de courbes de Bezier de degrés 2: 255
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/lettre-L-cursive.pbm  2; mv test.eps ./lettre-L-cursiv
+e_2.eps
+Nombre de contours: 3
+d: 2.000000
+Nombre de courbes de Bezier de degrés 2: 46
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/lettre-L-cursive.pbm  3; mv test.eps ./lettre-L-cursiv
+e_3.eps
+Nombre de contours: 3
+d: 3.000000
+Nombre de courbes de Bezier de degrés 2: 40
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/lettre-L-cursive.pbm  10; mv test.eps ./lettre-L-cursi
+ve_10.eps
+Nombre de contours: 3
+d: 10.000000
+Nombre de courbes de Bezier de degrés 2: 26
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/lettre-L-cursive.pbm  30; mv test.eps ./lettre-L-cursi
+ve_30.eps
+Nombre de contours: 3
+d: 30.000000
+Nombre de courbes de Bezier de degrés 2: 15
+
+
+
+
+
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/ColombesDeLaPaix.pbm  1; mv test.eps ./ColombesDeLaPai
+x_1.eps
+Nombre de contours: 106
+d: 1.000000
+Nombre de courbes de Bezier de degrés 2: 1599
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/ColombesDeLaPaix.pbm  3; mv test.eps ./ColombesDeLaPai
+x_3.eps
+Nombre de contours: 106
+d: 3.000000
+Nombre de courbes de Bezier de degrés 2: 587
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/ColombesDeLaPaix.pbm  10; mv test.eps ./ColombesDeLaPa
+ix_10.eps
+Nombre de contours: 106
+d: 10.000000
+Nombre de courbes de Bezier de degrés 2: 295
+louca@louca-ubuntu:/mnt/data/Documents/DLST/MAP401/Vectorisation-et-simplification-d-image-bitmap/tache_finale$ ./simplification_bezier2 ../images_test/ColombesDeLaPaix.pbm  30; mv test.eps ./ColombesDeLaPa
+ix_30.eps
+Nombre de contours: 106
+d: 30.000000
+Nombre de courbes de Bezier de degrés 2: 148

@@ -1,0 +1,4 @@
+Nombre de contours: 422
+Nombre de segments: 2079
+Nombre de contours: 422
+Nombre de segments: 2079

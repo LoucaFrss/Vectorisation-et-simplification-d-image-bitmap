@@ -35,5 +35,5 @@ typedef struct
 
 } Segment;
 
-#endif
 double distance_point_segment(Segment s, Point p);
+#endif

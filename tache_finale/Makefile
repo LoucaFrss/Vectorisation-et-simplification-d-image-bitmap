@@ -34,10 +34,10 @@ LDOPTS = -L$(LIBDIR) -lm
 INCLUDEOPTS = -I$(INCDIR)
 
 # options de compilation
-COMPILOPTS = -g -Wall $(INCLUDEOPTS)
-
+COMPILOPTS = $(INCLUDEOPTS) -O3 -march=native -flto -Wall -Wextra
+LDFLAGS = -flto
 # liste des executables
-EXECUTABLES =  test_bezier
+EXECUTABLES =  simplification_segment simplification_bezier3 simplification_bezier2 
 
 
 #############################################################################
@@ -84,19 +84,8 @@ contour.o : contour.c contour.h  image.h geom2d.h liste.h
 	@echo "---------------------------------------------"
 	$(CC) -c $(COMPILOPTS) $<
 		
-sequence_point.o : sequence_point.c sequence_point.h 
-	@echo ""
-	@echo "---------------------------------------------"
-	@echo "Compilation du module sequence_point"
-	@echo "---------------------------------------------"
-	$(CC) -c $(COMPILOPTS) $<
 
-eps.o : eps.c eps.h bezier.h 
-	@echo ""
-	@echo "---------------------------------------------"
-	@echo "Compilation du module eps"
-	@echo "---------------------------------------------"
-	$(CC) -c $(COMPILOPTS) $<
+eps.o : eps.c eps.h bezier.h  liste.h bezier.h segment.h
 
 liste.o : liste.c liste.h 
 	@echo ""
@@ -113,29 +102,59 @@ bezier.o : bezier.c geom2d.h liste.h
 	@echo "---------------------------------------------"
 	$(CC) -c $(COMPILOPTS) $<
 
-
-test_simplification.o : test_simplification.c sequence_liste.h geom2d.h contour.h image.h
+segment.o : segment.c segment.h geom2d.h liste.h
 	@echo ""
 	@echo "---------------------------------------------"
-	@echo "Compilation du module test_simplification"
+	@echo "Compilation du module segment"
 	@echo "---------------------------------------------"
 	$(CC) -c $(COMPILOPTS) $<
+
+
+simplification_segment.o : simplification_segment.c liste.h geom2d.h contour.h image.h eps.h bezier.h segment.h
+	@echo ""
+	@echo "---------------------------------------------"
+	@echo "Compilation du module simplification_segment"
+	@echo "---------------------------------------------"
+	$(CC) -c $(COMPILOPTS) $<
+
+simplification_bezier3.o : simplification_bezier3.c liste.h geom2d.h contour.h image.h eps.h bezier.h segment.h
+	@echo ""
+	@echo "---------------------------------------------"
+	@echo "Compilation du module simplification_bezier3"
+	@echo "---------------------------------------------"
+	$(CC) -c $(COMPILOPTS) $<
+
+simplification_bezier2.o : simplification_bezier2.c liste.h geom2d.h contour.h image.h eps.h bezier.h segment.h
+	@echo ""
+	@echo "---------------------------------------------"
+	@echo "Compilation du module simplification_bezier2"
+	@echo "---------------------------------------------"
+	$(CC) -c $(COMPILOPTS) $<
+
+
 ########################################################
 # regles explicites de creation des executables
 
-test_simplification : test_simplification.o sequence_liste.o geom2d.o contour.o image.o sequence_point.o
+simplification_segment : simplification_segment.o liste.o geom2d.o contour.o image.o eps.o bezier.o segment.o
 	@echo ""
 	@echo "---------------------------------------------"
 	@echo "Creation de l'executable "$@
 	@echo "---------------------------------------------"
-	$(CC) $^ $(LDOPTS) -o $@
+	$(CC) $(LDFLAGS) $^ $(LDOPTS) -o $@
 
-test_bezier : test_bezier.o  geom2d.o contour.o image.o bezier.o liste.o eps.o
+simplification_bezier3 : simplification_bezier3.o  geom2d.o contour.o image.o bezier.o liste.o eps.o segment.o
 	@echo ""
 	@echo "---------------------------------------------"
 	@echo "Creation de l'executable "$@
 	@echo "---------------------------------------------"
-	$(CC) $^ $(LDOPTS) -o $@
+	$(CC) $(LDFLAGS) $^ $(LDOPTS) -o $@
+
+simplification_bezier2 : simplification_bezier2.o  geom2d.o contour.o image.o bezier.o liste.o eps.o segment.o
+	@echo ""
+	@echo "---------------------------------------------"
+	@echo "Creation de l'executable "$@
+	@echo "---------------------------------------------"
+	$(CC) $(LDFLAGS) $^ $(LDOPTS) -o $@
 # regle pour "nettoyer" le r�pertoire
 clean:
 	rm -fR $(EXECUTABLES) *.o 

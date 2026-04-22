@@ -30,7 +30,6 @@ double distance_point_bezier2(Point p, Bezier2 b, double ti)
 {
     return distance(p, C2(b, ti));
 }
-
 Bezier2 approx_bezier2(Liste_Point L, int j1, int j2)
 {
     Point C1;
@@ -50,8 +49,8 @@ Bezier2 approx_bezier2(Liste_Point L, int j1, int j2)
         double alpha = 3.0 * n / (n * n - 1.0);
         double beta = (1.0 - (2.0 * n)) / (2.0 * (n + 1.0));
         // printf("alpha: %f\n", alpha);
-        Point S = T.tab[j1];
-        for (int i = 1; i < N - 1; i++)
+        Point S = {0, 0};
+        for (int i = 1; i <= N - 1; i++)
         {
             S = add_point(S, T.tab[j1 + i]);
         }
@@ -156,6 +155,7 @@ Bezier3 approx_bezier3(Liste_Point L, int j1, int j2)
     return b;
 }
 
+// calcule le point de la courbe de bezier
 Point C3(Bezier3 b, double t)
 {
     return set_point(
